@@ -1,5 +1,5 @@
 {
-  "name": "my-ui-library",
+  "name": "my-toto-ui-library",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
