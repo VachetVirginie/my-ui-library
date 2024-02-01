@@ -1,0 +1,30 @@
+{
+  "name": "my-ui-library",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-library.umd.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-library.js",
+      "require": "./dist/ui-library.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite-plugin-vuetify": "^1.0.2",
+    "vue": "^3.3.4",
+    "vuetify": "^3.5.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.6"
+  }
+}
