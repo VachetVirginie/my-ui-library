@@ -1,5 +1,8 @@
 {
   "name": "my-ui-library",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "version": "1.0.0",
   "type": "module",
   "files": [
