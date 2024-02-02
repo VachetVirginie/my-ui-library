@@ -1,15 +1,10 @@
 {
   "name": "my-toto-ui-library",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "types": "./dist/my-toto-ui-library.d.ts",
-  "version": "1.0.21",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/ui-library.umd.cjs",
+  "version": "1.0.22",
+  "description": "Description de votre bibliothèque",
+  "main": "dist/ui-library.umd.cjs",
+  "module": "dist/ui-library.esm.js",
+  "types": "dist/my-toto-ui-library.d.ts",
   "exports": {
     ".": {
       "import": "./dist/ui-library.ts",
@@ -22,6 +17,13 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/votre-utilisateur/votre-projet.git"
+  },
+  "keywords": ["votre", "mots-clés", "ici"],
+  "author": "Votre nom",
+  "license": "MIT",
   "dependencies": {
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.4",
