@@ -1,1 +1,5 @@
-export { default as MyButton } from "@/components/Button.vue";
+import MyButton from './Button';
+
+export {
+    MyButton
+}

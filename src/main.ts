@@ -1,21 +1,14 @@
-import { createApp } from 'vue'
-import { createVuetify } from 'vuetify'
-import './style.css'
-import App from './App.vue'
-import { MyButton } from '@/components';
+import MyButton from './components/Button.vue';
+import type { App } from 'vue'
 
-const MyComponentLibrary = {
-    install: (app) => {
-        app.component('MyButton', GuruButton);
-    }
-    };MyButton
-    
-export {vuetify, GuruComponentLibrary, MyButton};
+const components : any = {
+    MyButton
+}
 
-const vuetify = createVuetify()
+export default (app : App,) => {
+    Object.keys(components).forEach(key => {
+        app.component(key, components[key]);
+    });
+}
 
-
-
-
-
-createApp(App).use(vuetify).mount('#app')
+export { MyButton }

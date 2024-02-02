@@ -4,7 +4,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "types": "./dist/my-toto-ui-library.d.ts",
-  "version": "1.0.1",
+  "version": "1.0.21",
   "type": "module",
   "files": [
     "dist"
@@ -12,7 +12,7 @@
   "main": "./dist/ui-library.umd.cjs",
   "exports": {
     ".": {
-      "import": "./dist/ui-library.js",
+      "import": "./dist/ui-library.ts",
       "require": "./dist/ui-library.umd.cjs"
     },
     "./style.css": "./dist/style.css"
